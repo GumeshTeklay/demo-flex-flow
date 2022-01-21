@@ -24,3 +24,24 @@ h2 {
 .content {
     padding: 16px;
 }
+
+.flex-container{
+    /* If the default content width of the flex items is wider than the browser
+    window - this will create overflowing content */
+    display: flex;
+
+    /* Flex Directions */
+    flex-flow: row; /* Default value */
+    /* flex-flow: row-reverse;
+    flex-flow: column;
+    flex-flow: column-reverse; */
+
+    /* Flex Wraps */
+    flex-flow: nowrap;
+    /* flex-flow: wrap;
+    flex-flow: wrap-reverse; */
+
+    /* Flex Directions & Flex Wraps together */
+    flex-flow: row nowrap;
+    flex-flow: row-reverse wrap;
+}
